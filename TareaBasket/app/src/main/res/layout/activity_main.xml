@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Equipo Local -->
+        <TextView
+            android:id="@+id/tvLocalTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/local_team"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvVisitorTeam"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/tvLocalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_score"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalTeam"
+            app:layout_constraintStart_toStartOf="@id/tvLocalTeam"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalTeam"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botones Equipo Local -->
+        <Button
+            android:id="@+id/btnLocalPlusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalScore"
+            app:layout_constraintStart_toStartOf="@id/tvLocalScore"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalScore"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnLocalPlusTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalPlusOne"
+            app:layout_constraintStart_toStartOf="@id/btnLocalPlusOne"
+            app:layout_constraintEnd_toEndOf="@id/btnLocalPlusOne"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnLocalMinusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalPlusTwo"
+            app:layout_constraintStart_toStartOf="@id/btnLocalPlusTwo"
+            app:layout_constraintEnd_toEndOf="@id/btnLocalPlusTwo"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Equipo Visitante -->
+        <TextView
+            android:id="@+id/tvVisitorTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visitor_team"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tvLocalTeam"
+            app:layout_constraintStart_toEndOf="@id/tvLocalTeam"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvVisitorScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_score"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorTeam"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorTeam"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorTeam"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botones Equipo Visitante -->
+        <Button
+            android:id="@+id/btnVisitorPlusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorScore"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorScore"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorScore"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnVisitorPlusTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorPlusOne"
+            app:layout_constraintStart_toStartOf="@id/btnVisitorPlusOne"
+            app:layout_constraintEnd_toEndOf="@id/btnVisitorPlusOne"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnVisitorMinusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorPlusTwo"
+            app:layout_constraintStart_toStartOf="@id/btnVisitorPlusTwo"
+            app:layout_constraintEnd_toEndOf="@id/btnVisitorPlusTwo"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botones de Control -->
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_rotate"
+            android:contentDescription="@string/reset_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="32dp"/>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="@string/next_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="32dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

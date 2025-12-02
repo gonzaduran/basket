@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tablero Basketball</string>
+
+    <!-- MainActivity -->
+    <string name="local_team">LOCAL</string>
+    <string name="visitor_team">VISITANTE</string>
+    <string name="initial_score">0</string>
+    <string name="plus_one">+1</string>
+    <string name="plus_two">+2</string>
+    <string name="minus_one">-1</string>
+    <string name="reset_description">Reiniciar marcador</string>
+    <string name="next_description">Ver resultados</string>
+
+    <!-- ScoreActivity -->
+    <string name="final_result">RESULTADO FINAL</string>
+    <string name="local_wins">¡Gana el equipo Local!</string>
+    <string name="visitor_wins">¡Gana el equipo Visitante!</string>
+    <string name="tie">¡Empate!</string>
+</resources>
